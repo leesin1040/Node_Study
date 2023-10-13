@@ -55,9 +55,9 @@
 // let solution = (num1, num2) => num1 % num2;
 
 function solution(num1, num2) {
-  return Math.floor(num1 / num2);
+  let answer = (num1 / num2) * 1000;
+  return Math.trunc(answer);
 }
-
-let num1 = 10;
-let num2 = 5;
+let num1 = 3;
+let num2 = 2;
 console.log(solution(num1, num2));
