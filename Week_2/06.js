@@ -1,15 +1,9 @@
-function solution(numer1, denum1, numer2, denum2) {
-  let numer = numer1 * denum2 + numer2 * denum1;
-  let denum = denum1 * denum2;
-} // 분수 통분 완료
-
-function gcddd(numer, denum) {
-  let gcd = 1;
-  for (let i = 2; i <= Math.min(numer, denum); i++) {
-    if (numer % i === 0 && denum % i === 0) gcd = i;
+//주사위 두개를 던져서 두 눈의 합이 6이 되는 경우의 수
+for (var i = 1; i <= 6; i++) {
+  for (var j = 1; j <= 6; j++) {
+    if (i + j === 6) {
+      console.log(`[${i},${j}]`);
+    }
   }
-  let numma = numer / gcd;
-  let denuma = denum / gcd;
-  let result = [numma, denuma];
-  return result;
 }
+// [1,5] [2,4] [3,3] [4,2] [5,1]
